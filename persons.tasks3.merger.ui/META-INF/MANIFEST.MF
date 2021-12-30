@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: persons.tasks3.merger.ui
+Bundle-ManifestVersion: 2
+Bundle-Name: persons.tasks3.merger.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: persons.tasks3.merger.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: persons.tasks3.merger,
+ persons.tasks3.merger.ide,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.builder
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: persons.tasks3.merger.ui.internal,
+ persons.tasks3.merger.mdsl.ui.contentassist,
+ persons.tasks3.merger.mdsl.ui.quickfix
+Bundle-Activator: persons.tasks3.merger.ui.internal.MergerActivator

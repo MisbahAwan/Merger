@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: persons.tasks3.merger
+Bundle-ManifestVersion: 2
+Bundle-Name: persons.tasks3.merger
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: persons.tasks3.merger; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: persons.tasks3.merger.mdsl,
+ persons.tasks3.merger.mdsl.formatting2,
+ persons.tasks3.merger.mdsl.generator,
+ persons.tasks3.merger.mdsl.mergerDsl,
+ persons.tasks3.merger.mdsl.mergerDsl.impl,
+ persons.tasks3.merger.mdsl.mergerDsl.util,
+ persons.tasks3.merger.mdsl.parser.antlr,
+ persons.tasks3.merger.mdsl.parser.antlr.internal,
+ persons.tasks3.merger.mdsl.scoping,
+ persons.tasks3.merger.mdsl.serializer,
+ persons.tasks3.merger.mdsl.services,
+ persons.tasks3.merger.mdsl.validation
+Import-Package: org.apache.log4j
